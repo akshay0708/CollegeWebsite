@@ -1,0 +1,30 @@
+/* gallery-section  */
+
+#gallery-section{
+    height: 1550px;
+}
+
+#gallery .image {
+    margin: 10px;  
+    text-align: center;
+}
+#gallery .image img{
+width: 550px;
+}
+
+
+
+/* about-us section  */
+#about-us{
+    height: 550px;
+}
+#about-us .space{
+    padding-bottom: 25px;
+}
+#about-us #wrt{
+    width: 90%;
+}
+#about-us #vector1{
+    display: none;
+}
+

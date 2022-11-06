@@ -1,0 +1,21 @@
+#home-section{
+    height: auto;
+}
+#home-section::before{
+    background: none;
+}
+#gallery-section{
+    height: auto;
+}
+#gallery-section::before{
+    background: none;
+}
+#gallery-section .image img{
+    width: 80%;
+}
+#about-us::before{
+    background: none;
+}
+#contact-us::before{
+    background: none;
+}

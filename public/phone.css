@@ -1,0 +1,95 @@
+/* home-section  */
+#home-section{
+    height: 1322px;
+}
+#home #welcome #heading-welcome{
+    font-size:2.7rem ;
+}
+#activities{
+    flex-direction: column;
+}
+
+/* updates section  */
+#updates{
+    flex-direction: column;
+    align-items: center;
+}
+
+#updates .article{
+width: 85%;
+}
+
+/* gallery section  */
+
+#gallery-section{
+    height: 1050px;
+}
+#gallery .image{
+    text-align: center
+}
+#gallery .image img{
+    width: 330px;
+}
+@media screen and (min-width:712px) {
+    #gallery-section{
+        height: 622px;
+    }
+}
+/* facilities section  */
+#facilities h1{
+    font-size: 1.58rem;
+}
+#inf article{
+    width: 100%;
+    height: auto;
+}
+#facilities #inf{
+    flex-direction: column;
+    text-align: center;
+}
+/* about-us section */
+
+@media screen and (max-width:598px){
+    #about-us{
+        height: 325px;
+    }
+    #about #mission{
+      display: none;
+    }
+    #about #objectives{
+     display: none;
+    }
+}
+/* testimonials section  */
+#testimonials{
+    flex-direction: column;
+}
+#testimonials .reviews{
+    width: 85%;
+    margin: 17px;
+}
+
+/* contact-us section  */
+#contact-us{
+    height: 610px;
+}
+#contact{
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    padding-bottom: 10px;
+}
+#contact #call button{
+    font-size: 1.1rem;
+}
+#contact #whatsapp button{
+    font-size: 1.08rem;
+}
+#whatsapp{
+    padding-top: 15px;
+}
+#email{
+    padding-top: 30px ;
+}
+.contact-box div{
+    display: none;
+}

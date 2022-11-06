@@ -1,0 +1,610 @@
+/* CSS reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px grey;
+}
+
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 10;
+}
+
+/* navigation bar: logo and image  */
+
+#logo{
+    margin: 5px 20px 5px 30px;
+
+}
+#logo img{
+    width: 65px;
+    height: 77px;
+
+}
+@media screen and (max-width:1011px) {
+    #navbar{
+        display: none;
+    }
+}
+@media screen and (min-width:1011px) and (max-width:1128px) {
+    #navbar{
+        height: 78px;
+    }
+    #logo{
+        display: none;
+    }   
+}
+
+/* navigation bar:list styling  */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar li a{
+    color: #48487f;
+        text-decoration: none;
+        display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+#navbar li a:hover,
+    #navbar li a:active {
+        text-decoration: underline;
+        transform: translateY(-1.3px);
+        color: rgb(52, 52, 135);
+    }
+.btn{
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 21px;
+        text-decoration: none;
+        background-color: white;
+        color: #48487f;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo 2', cursive;
+        padding: 2px 9px ;
+}
+.btn:hover {
+    background-color: #e4e4f4;
+    transform: scale(1.1);
+}
+
+/* home section  */
+
+#home-section{
+    display: flex;
+    padding: 5px;
+    height: 674px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    #home-section::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        top: 0px;
+        left: 0px;
+        background:#c3ecec no-repeat center center/cover ;
+        
+    }
+    #home{
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    max-width: 1436px;
+
+    }
+    #welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 150px;
+    }
+    #welcome #heading-welcome{
+        color: #48487f;
+    font-family: 'Bree Serif', serif;
+    font-size: 3.2rem;
+        text-align: center;
+    }
+
+/* Activities section  */
+
+/* #activities-container{
+
+} */
+
+#activities-container h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.3rem;
+    color: rgb(9 9 9 / 42%);
+}
+#activities{
+    
+    display: flex;
+    margin: 23px 34px;
+}
+#activities .box{
+    border: 2px solid brown;
+    border-radius: 28px;
+    padding: 22px;
+    margin: 5px 25px;
+    margin-bottom: 23px;
+    background-color:  rgb(230 246 246);
+    
+}
+#activities .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#activities .box #a3{
+    height: 95px;
+    padding: 5px 0px;
+}
+#activities .box h2{
+    padding: 10px 0px;
+}
+
+/* updates section */
+#updates-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#updates-section #updates-head{
+    text-align: center;
+    font-size: 1.175rem;
+}
+#updates{
+    margin: auto 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 18px;
+    max-width: 1436px;
+    box-sizing: border-box;
+}
+
+#updates-section h2{
+    font-size: 1em;
+    margin: 0 0 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#updates .article{
+width: 38%;
+    margin-bottom: 45px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    
+}
+#updates h2{
+    color: #202124;
+    size: 1rem;
+}
+/* gallery section  */
+#gallery-section{
+    height: 1000px;
+    position: relative;
+}
+#gallery-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+    left: 0px;
+    background: url(../img/bg5.webp) no-repeat center center/cover ;
+    
+}
+
+#gallery-section h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.3rem;
+    margin: 20px;
+    color: rgb(25, 24, 24);
+}
+
+
+#gallery-section .space{
+    height: 4px;
+    padding: 38px;
+}
+#gallery-section .line{
+    width: 100px;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  margin: auto;
+  max-width: 1250px;
+  justify-content: center;
+}
+#gallery .image{
+    margin: 20px;  
+}
+
+#gallery .image img{
+    width: 355px;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1203px) {
+    .hid{
+        display: none;
+    }
+    #gallery-section{
+        height: 730px;
+    }
+    
+    #gallery .image {
+        margin: 20px 30px;  
+    }
+#gallery .image img{
+   width: 390px ;
+}
+}
+
+/* gallery section  */
+
+/* facilities section  */
+
+#facilities .space{
+    
+    height: 26px;
+    padding: 47px;
+}
+#facilities .line{
+    width: 130px;
+}
+#facilities h1{
+    font-size: 1.8rem;
+    padding-bottom: 33px;
+    word-spacing:0.35rem;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+}
+#facilities h1 a{
+    text-decoration: none;
+    color: black;
+}
+#facilities h1:hover{
+    text-decoration: underline;
+transform: scale(1.02);
+color: rgb(128, 127, 127);
+transition-duration: 0.4s;
+}
+#inf{
+    display: flex;
+    justify-content: center;
+    padding: 17px 0px;
+    margin: 0px auto;
+    background-color: #f5f4f4;
+    max-width: 1070px;
+}
+#facilities img{
+    margin-left: 20px;
+    height: 286px;
+    width: 217px;
+    border-radius: 10px;
+    border: 2px solid rgb(230, 169, 14);
+}
+#inf article{
+    width: 800px;
+    padding: 13px 30px 30px 50px ;
+    box-sizing: border-box;
+    
+    }
+#inf article a{
+    font-size: 1.17rem;
+}
+#inf p{
+    text-align:left;
+}
+
+/* about-us section  */
+#about-us{
+    position: relative;
+    height: 583px;
+    margin-top: 33px;
+}
+#about-us::before{
+    content: "";
+    position: absolute;
+    left:0px;
+    background:url(../img/bg2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 10;
+}
+#about{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 1436px;
+    margin: 0px 20px 0px 30px;
+}
+#about-us .space{
+    height: 5px;
+    padding: 28px 0px 72px 0px;
+}
+#about-us .line{
+    width: 100px;
+}
+#about #wrt{
+    padding-top: 10px;
+    width: 50%;
+}
+#about #wrt h1{
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+#about #wrt #intro p{
+    margin: 25px auto 0px auto;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-weight:600;
+    line-height:1.6rem;
+}
+#about #wrt #mission {
+    padding-top: 15px;
+}
+#about #wrt .about-sh {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+}
+#about #wrt #mission p {
+    padding-top: 5px;
+}
+
+#about #wrt #objectives {
+    padding-top: 20px;
+}
+
+#about #wrt #objectives ol {
+    line-height: 1.55rem;
+    padding-top: 5px;
+    list-style:disc;
+}
+
+#about img{
+    width: 480px;
+    margin: 20px 0px 0px 60px;
+    
+}
+
+@media screen and  (max-width:1161px){
+    #about-us{
+        height: 630px;
+    }
+    #about img{
+        width: 450px;
+        margin: 85px 0px 0px 17px;
+    }
+}
+
+/* testimonials section  */
+#testimonials-section{
+    margin-bottom: 35px;
+}
+#testimonials-section #testimonials-h{
+    font-size: 1.795rem;
+    font-family: 'Libre Baskerville', serif;
+}
+#testimonials-section .space{
+    height: 5px;
+    padding: 55px;
+}
+#testimonials-section .line{
+    width: 100px;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    justify-content: space-around;
+}
+#testimonials .reviews{
+    width: 45%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#testimonials .reviews blockquote{
+    padding-bottom: 15px;
+    font-family: "Open Sans",sans-serif;
+line-height: 1.625rem;
+}
+#testimonials .reviews cite{
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+  color: #48487f;
+  line-height: 1.5rem;
+}
+#test{
+    height: 300px;
+    background-color: white;
+}
+
+/* contact-us section  */
+
+#contact-us{
+    height: 510px;
+    position: relative;
+}
+#contact-us::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    left: 0px;
+    background:url(../img/contact1600x900.jpg) no-repeat center center/cover ;
+   
+}
+#contact-us .space{
+height: 5px;
+padding: 25px;
+}
+#contact-us .line{
+    width: 80px;
+}
+#contact-us #contact-h{
+    font-size: 2.35rem;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 12px;
+}
+#contact-us #c1{
+     padding: 20px 25px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 0px 20px;
+
+}
+.contact-box span{
+    text-align: center;
+    padding: 6px 0px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+.contact-box span a{
+    text-decoration: none;
+}
+.contact-box span a:hover{
+    text-decoration: underline;
+}
+.contact-box div{
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 10px;
+    line-height: 1.4rem;
+
+}
+.contact-box img{
+    margin: 0px auto;
+width: 20%;
+}
+#whatsapp{
+    padding-top: 8px;
+}
+#call{
+    padding-top: 15px;
+}
+#email{
+    padding-top: 10px ;
+}
+
+#whatsapp div{
+    padding-bottom: 8px;
+    line-height: 1.3rem;
+
+}
+
+#contact button{
+    display: inline;
+    color: white;
+    font-weight: bold;
+font-family: 'Baloo 2', cursive;
+border: none;
+cursor: pointer;
+}
+    #contact #call button{
+        background-color: rgb(66 183 250);
+        border-radius: 5px;
+        padding: 6px 17px;
+        font-size: 1.35rem;
+        
+}
+#contact #call button:hover{
+    background-color: rgb(6, 154, 239);
+}
+#contact #whatsapp button{
+    background-color: #58c665;
+    border-radius: 5px;
+    padding: 6px 17px;
+    font-size: 1.3rem;
+}
+#contact #whatsapp button:hover{
+   background-color:  #02ac16;
+}
+#contact #email button{
+    background-color: #ff1616;
+    border-radius: 5px;
+    padding: 6px 17px;
+    font-size: 1.35rem;
+}
+#contact #email button:hover{
+   background-color:  #d10606;
+}
+
+/* utility classes */
+
+.center{
+    text-align: center;
+}
+.line {
+    border: 1px solid black;
+    margin: 0 auto 16px;
+    width: 50px;
+}
+.article{
+    background: whitesmoke no-repeat center center/cover ;
+    border-radius: 3px;
+    padding: 14px;
+}
+
